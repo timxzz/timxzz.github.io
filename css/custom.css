@@ -1,0 +1,90 @@
+@font-face {
+    font-family: karlaregular;
+    src: url(../font/karla/Karla-Regular.ttf);
+}
+
+body {
+    font-family: karlaregular,sans-serif;
+}
+
+html, body, .main-content { height: 100%; }
+
+.aboutTX {
+    color: #223e6e;
+    font-weight: 400;
+}
+
+.conferenceName {
+    margin-top: -10px;
+    color: #4D5656;
+    font-size: 13px;
+}
+
+.content {
+    padding-bottom: 3em;
+}
+
+.courseraCertPic {
+    cursor: pointer;
+    width: 500px;
+    margin-bottom: 15px;
+}
+
+.courseDiscription {
+    margin-top: -10px;
+    margin-left: 25px;
+}
+
+.footer-icon {
+    float: right;
+}
+
+.footer-icon > i {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.footer-icon > i:before {
+    transition: color .3s;
+    color: #666;
+}
+
+.footer-icon > i:hover:before {
+    color: #b2b2b2;
+}
+
+.footer-p {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.footer-position {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+}
+
+.main-content {
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 3em;
+}
+
+.moocCourseName {
+    font-family: Georgia,serif;
+    font-size: 16px;
+}
+
+.name {
+    color: #223e6e;
+}
+
+.personal-info h4{
+    font-weight: 600;
+}
+
+.profilePic {
+    width: 180px;
+}
