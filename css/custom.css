@@ -88,3 +88,27 @@ html, body, .main-content { height: 100%; }
 .profilePic {
     width: 180px;
 }
+
+.project-thumbnail {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+}
+
+.project-left {
+    text-align: center;
+}
+
+.project-left i {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.project-left i:before {
+    transition: color .3s;
+    color: #666;
+}
+
+.project-left i:hover:before {
+    color: #b2b2b2;
+}
