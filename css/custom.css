@@ -112,3 +112,7 @@ html, body, .main-content { height: 100%; }
 .project-left i:hover:before {
     color: #b2b2b2;
 }
+
+.project-media-list {
+    margin-top: 15px;
+}
