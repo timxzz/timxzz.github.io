@@ -25,8 +25,11 @@ html, body, .main-content { height: 100%; }
 }
 
 .courseraCertPic {
+
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     cursor: pointer;
-    width: 500px;
     margin-bottom: 15px;
 }
 
