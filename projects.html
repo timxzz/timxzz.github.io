@@ -44,9 +44,132 @@
 
         <!-- Projects -->
         <div class="row project-media-list">
-            <div class="col-lg-1">
-            </div>
-            <div class="col-lg-10">
+            <!--<div class="col-lg-1">-->
+            <!--</div>-->
+            <div class="col-lg-12">
+                <div class="media">
+                    <div class="media-left project-left">
+                        <a href="pdf/AL_Thesis.pdf">
+                            <img class="media-object thumbnail project-thumbnail" src="images/al_diag.png"
+                                 alt="thumbnail for active learning with ssgm">
+                        </a>
+                        [<a href="pdf/AL_Thesis.pdf" target="_blank">
+                        Thesis </a>]
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Exploiting Semi-Supervised Generative Model in Active Learning</h3>
+                        <p>
+                            My second master project. Active learning tries to solve a practical problem for machine
+                            learning, which is to create a good model with only limited labelling budget. In this
+                            project, we exploit useful properties from semi-supervised generative model and use them
+                            in active learning. Our experiments in the half-moon and MNIST dataset show that by using
+                            semi-supervised generative model with simple acquisition function such as predictive
+                            entropy, we are able to improve the performance of active learning. Further experiments
+                            on our proposed acquisition functions expose interesting challenges in using data density
+                            provided by the model, which can be a valuable pointer for future active learning research.
+                        </p>
+
+                        <hr>
+                        <p>
+                            <b>Tim Z. Xiao</b>,
+                            <a href="http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Main.Bio">David Barber</a>
+                        </p>
+                        <p>
+                            <b>Keywords:</b> Machine Learning, Active Learning, Generative Model, Semi-Supervised
+                            Model, VAE
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="media">
+                    <div class="media-left project-left">
+                        <a href="https://sites.google.com/view/udlworkshop2020/accepted-papers">
+                            <img class="media-object thumbnail project-thumbnail" src="images/uncertainty-qa.png"
+                                 alt="thumbnail for uncertain in QA">
+                        </a>
+                        [<a href="http://www.gatsby.ucl.ac.uk/~balaji/udl2020/accepted-papers/UDL2020-paper-113.pdf" target="_blank">
+                        Paper </a>]
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Data Efficient Multilingual Question Answering</h3>
+                        <p>
+                            I am an advisor for this project. Data scarcity is a major barrier for multilingual
+                            question answering: current systems work well with languages such as English where data
+                            is affluent, but face challenges with small corpora. As data labelling is expensive,
+                            previous works have resorted to pre-tuning systems on larger multilingual corpora
+                            followed by fine-tuning on the smaller ones. Instead of curating and labelling large
+                            corpora, we demonstrate a data efficient multi-lingual question answering system which
+                            only selects uncertain questions for labelling, reducing labelling efforts and costs. To
+                            realise this Bayesian active learning framework, we develop methodology to quantify
+                            uncertainty in several state-of-art attention-based Transfer question answering models.
+                            We then propose an uncertainty measure based on the variance of BLEU scores, and computed
+                            via Monte Carlo Dropout, to detect out-of-distribution questions. We finish by showing
+                            the effectiveness of our uncertainty measures in various out-of-distribution question
+                            answering settings.
+                        </p>
+
+                        <hr>
+                        <p>
+                            Zhihao Lyu, Danier Duolikun, Bowei Dai, Yuan Yao, Pasquale Minervini,
+                            <b>Tim Z. Xiao</b> and
+                            <a href="http://www.cs.ox.ac.uk/people/yarin.gal/website/">Yarin Gal</a>
+                        </p>
+                        <p>
+                            <b>Workshop on Uncertainty & Robustness in Deep Learning, ICML 2020</b>
+                        </p>
+                        <p>
+                            <b>Keywords:</b> Machine Learning, Bayesian Deep Learning, Uncertainty, NMT,
+                            Out-of-Distribution, Question Answering
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="media">
+                    <div class="media-left project-left">
+                        <a href="https://arxiv.org/abs/2006.08344">
+                            <img class="media-object thumbnail project-thumbnail" src="images/de+nl-en.png"
+                                 alt="thumbnail for uncertain transformer">
+                        </a>
+                        [<a href="https://arxiv.org/abs/2006.08344" target="_blank">arXiv</a>]
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Detecting Out-of-Distribution Translations with Variational
+                            Transformers</h3>
+                        <p>
+                            My master project. In the project, we detect out-of-training-distribution sentences in
+                            Neural Machine Translation using the Bayesian Deep Learning equivalent of Transformer
+                            models. For this we develop a new measure of uncertainty designed specifically for long
+                            sequences of discrete random variables -- i.e. words in the output sentence. Our new
+                            measure of uncertainty solves a major intractability in the naive application of existing
+                            approaches on long sentences. We use our new measure on a Transformer model trained with
+                            dropout approximate inference. On the task of German-English translation using WMT13 and
+                            Europarl, we show that with dropout uncertainty our measure is able to identify when
+                            Dutch source sentences, sentences which use the same word types as German, are given to
+                            the model instead of German.
+                        </p>
+
+                        <hr>
+                        <p>
+                            <b>Tim Z. Xiao</b>,
+                            <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>,
+                            <a href="http://www.cs.ox.ac.uk/people/yarin.gal/website/">Yarin Gal</a>
+                        </p>
+                        <p>
+                            <b><span style="color:red">Spotlight talk</span>, Workshop on Bayesian Deep Learning, NeurIPS 2019</b>
+                        </p>
+                        <p>
+                            <b>Keywords:</b> Machine Learning, Bayesian Deep Learning, Uncertainty, NMT,
+                            Out-of-Distribution
+                        </p>
+                    </div>
+                </div>
+
+
+
                 <div class="media">
                     <div class="media-left project-left">
                         <a href="http://timx.me/Facial_Expression_Modifier/">
@@ -67,6 +190,8 @@
                     </div>
                 </div>
 
+
+
                 <div class="media">
                     <div class="media-left project-left">
                         <a href="http://timx.me/Particle_System/?particleCount=1000&trails=false">
@@ -78,7 +203,10 @@
                     <div class="media-body">
                         <h3 class="media-heading">A Simple Particle System</h3>
                         <p>
-                            A particle system that simulates an asteroid hitting the earth. The simulator can be reconfigured in the url to have different number of particles. Change of time, gravity and velocity is also allowed using the control panel. The project utilises WebGL and Three.js.
+                            One of my coursework project. A particle system that simulates an asteroid hitting the
+                            earth. The simulator can be reconfigured in the url to have different number of
+                            particles. Change of time, gravity and velocity is also allowed using the control panel.
+                            The project utilises WebGL and Three.js.
                         </p>
                         <p>
                             <b>Keywords:</b> WebGL, Three.js, Particle System
@@ -87,8 +215,8 @@
                 </div>
 
             </div>
-            <div class="col-lg-1">
-            </div>
+            <!--<div class="col-lg-1">-->
+            <!--</div>-->
         </div>
         <!-- End of Projects -->
 
@@ -100,7 +228,7 @@
 <div class="container footer-position">
     <footer class="footer">
         <p class="footer-p">
-            &copy; 2018 Tim Xiao. All right reserved.
+            &copy; 2020 Tim Xiao. All right reserved.
             <span class="footer-icon">
                 <i class="fa fa-github fa-lg" aria-hidden="true" onclick="window.location='https://github.com/timxzz';"></i>
                 <i class="fa fa-linkedin-square fa-lg" aria-hidden="true" onclick="window.location='https://www.linkedin.com/in/timxzz';"></i>

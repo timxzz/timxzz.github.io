@@ -1,10 +1,45 @@
 @font-face {
     font-family: karlaregular;
     src: url(../font/karla/Karla-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: karlabold;
+    src: url(../font/karla/Karla-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: karlaitalic;
+    src: url(../font/karla/Karla-Italic.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: karlabolditalic;
+    src: url(../font/karla/Karla-BoldItalic.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-    font-family: karlaregular,sans-serif;
+    font-family: karlaregular, sans-serif;
+}
+
+em {
+    font-family: 'karlaitalic', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+b, strong {
+    font-family: 'karlabold', sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }
 
 html, body, .main-content { height: 100%; }
@@ -75,6 +110,11 @@ html, body, .main-content { height: 100%; }
     padding-bottom: 3em;
 }
 
+.media-body p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .moocCourseName {
     font-family: Georgia,serif;
     font-size: 16px;
@@ -86,6 +126,11 @@ html, body, .main-content { height: 100%; }
 
 .personal-info h4{
     font-weight: 600;
+}
+
+.personal-info p{
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .profilePic {
@@ -118,4 +163,6 @@ html, body, .main-content { height: 100%; }
 
 .project-media-list {
     margin-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
