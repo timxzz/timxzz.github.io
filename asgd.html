@@ -230,8 +230,8 @@ function get_asgd_path(x0, y0, num_steps, lambda, eps) {
     var x1, y1, gradient;
     for (i=0; i < num_steps; i++) {
         gradient = grad_f(x0, y0)
-        x1 = x0 - lambda*(f(x0,y0) - f0)/(gradient[0] + eps)
-        y1 = y0 - lambda*(f(x0,y0) - f0)/(gradient[1] + eps)
+        x1 = x0 - (lambda*(f(x0,y0) - f0)/(gradient[0]*gradient[0] + gradient[1]*gradient[1] + eps)) * gradient[0]
+        y1 = y0 - (lambda*(f(x0,y0) - f0)/(gradient[0]*gradient[0] + gradient[1]*gradient[1] + eps)) * gradient[1]
         momentum_history.push({"x" : scale_x.invert(x1), "y" : scale_y.invert(y1)})
         x0 = x1
         y0 = y1
@@ -362,7 +362,7 @@ function minimize(x0,y0) {
 
 <form>
     Lambda: <input type = "text" id="lambda" value="0.1">
-    Epsilon: <input type = "text" id="eps" value="0.1">
+    Epsilon: <input type = "text" id="eps" value="0">
 </form>
 
 </body>
