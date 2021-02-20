@@ -224,14 +224,14 @@ function get_sgd_path(x0, y0, learning_rate, num_steps) {
 //     return momentum_history
 // }
 
-function get_asgd_path(x0, y0, num_steps, lambda, eps) {
+function get_asgd_path(x0, y0, num_steps, lambda, gamma) {
     var f0 = f(-1,0);
     var momentum_history = [{"x": scale_x.invert(x0), "y": scale_y.invert(y0)}];
     var x1, y1, gradient;
     for (i=0; i < num_steps; i++) {
         gradient = grad_f(x0, y0)
-        x1 = x0 - (lambda*(f(x0,y0) - f0)/(gradient[0]*gradient[0] + gradient[1]*gradient[1] + eps)) * gradient[0]
-        y1 = y0 - (lambda*(f(x0,y0) - f0)/(gradient[0]*gradient[0] + gradient[1]*gradient[1] + eps)) * gradient[1]
+        x1 = x0 - (lambda*(f(x0,y0) - f0)/(gradient[0]*gradient[0] + gradient[1]*gradient[1] + gamma)) * gradient[0]
+        y1 = y0 - (lambda*(f(x0,y0) - f0)/(gradient[0]*gradient[0] + gradient[1]*gradient[1] + gamma)) * gradient[1]
         momentum_history.push({"x" : scale_x.invert(x1), "y" : scale_y.invert(y1)})
         x0 = x1
         y0 = y1
@@ -340,8 +340,8 @@ function minimize(x0,y0) {
     // }
     if (draw_bool.Momentum) {
         var lambda = parseFloat(document.getElementById("lambda").value);
-        var eps = parseFloat(document.getElementById("eps").value);
-        var momentum_data = get_asgd_path(x0, y0, 200, lambda, eps);
+        var gamma = parseFloat(document.getElementById("gamma").value);
+        var momentum_data = get_asgd_path(x0, y0, 200, lambda, gamma);
         console.log(momentum_data)
         draw_path(momentum_data, "momentum");
     }
@@ -362,7 +362,7 @@ function minimize(x0,y0) {
 
 <form>
     Lambda: <input type = "text" id="lambda" value="0.1">
-    Epsilon: <input type = "text" id="eps" value="0">
+    Gamma: <input type = "text" id="gamma" value="0">
 </form>
 
 </body>
