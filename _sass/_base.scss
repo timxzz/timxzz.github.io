@@ -336,7 +336,14 @@ footer.sticky-bottom {
   h1 {
     color: var(--global-theme-color);
     font-size: 5rem;
+    font-family: 'Times New Roman', Times, serif;
   }
+}
+
+.posterior {
+  color: var(--global-theme-color);
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .tag-list {
