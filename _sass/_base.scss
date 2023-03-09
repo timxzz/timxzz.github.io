@@ -604,6 +604,15 @@ footer.sticky-bottom {
       div.abstract.hidden.open {
         border-color: var(--global-text-color);
       }
+      .bib-remarks {
+        font-weight: bolder;
+        .paper-highlight {
+          color: $red-color-dark;
+        }
+        .workshop {
+          color: $grey-color;
+        }
+      }
     }
   }
 }

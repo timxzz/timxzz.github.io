@@ -133,6 +133,18 @@
           {{ entry.note | strip }}
         </div>
 
+        <!-- Highlight/Workshop -->
+        {% if entry.highlight or entry.workshop -%}
+          <div class="bib-remarks">
+            {%- if entry.highlight -%}
+              <span class="paper-highlight">{{entry.highlight}}</span>,&nbsp;
+            {%- endif -%}
+            {%- if entry.workshop -%}
+              <span class="workshop">{{entry.workshop}}</span>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+
           <!-- Links/Buttons -->
           <div class="links">
           {%- if entry.abstract %}
