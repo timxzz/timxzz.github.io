@@ -5,3 +5,9 @@
 "ICLR":
   url: https://iclr.cc
   color: '#85c54b'
+
+"arXiv":
+  color: '#b31b1b'
+
+"Workshop":
+  color: '#828282'

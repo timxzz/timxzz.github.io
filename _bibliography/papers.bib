@@ -7,7 +7,7 @@
   abbr={ICLR},
   title={Trading Information between Latents in Hierarchical Variational Autoencoders},
   author={Xiao, Tim Z. and Bamler, Robert},
-  booktitle={ICLR},
+  booktitle={International Conference on Learning Representations (ICLR)},
   year={2023},
   arxiv={2302.04855},
   bibtex_show={true},
@@ -23,7 +23,7 @@
   title={Iterative Teaching by Data Hallucination},
   author={Qiu, Zeju and Liu, Weiyang and Xiao, Tim Z. and Liu, Zhen 
     and Bhatt, Umang and Luo, Yucen and Weller, Adrian and Schölkopf, Bernhard},
-  booktitle = {AISTATS},
+  booktitle = {International Conference on Artificial Intelligence and Statistics (AISTATS)},
   year={2023},
   bibtex_show={true},
   arxiv={2210.17467},
@@ -33,17 +33,20 @@
 }
 
 @article{zhang2022out,
+  abbr={Workshop},
   title={Out-of-Distribution Detection with Class Ratio Estimation},
   author={Zhang, Mingtian and Zhang, Andi and Xiao, Tim Z. and Sun, Yitong and McDonagh, Steven},
   journal={arXiv preprint arXiv:2206.03955},
   year={2022},
   bibtex_show={true},
   arxiv={2206.03955},
-  workshop={NeurIPS 2022 Workshop on Machine Learning Safety}
+  workshop={NeurIPS 2022 Workshop on Machine Learning Safety},
+  html={https://neurips2022.mlsafety.org}
 }
 
 
 @article{zhang2022improving,
+  abbr={arXiv},
   title={Improving VAE-Based Representation Learning},
   author={Zhang, Mingtian and Xiao, Tim Z. and Paige, Brooks and Barber, David},
   journal={arXiv preprint arXiv:2205.14539},
@@ -53,12 +56,34 @@
 }
 
 @article{shah2021locally,
+  abbr={arXiv},
   title={Locally-Contextual Nonlinear CRFs for Sequence Labeling},
   author={Shah, Harshil and Xiao, Tim Z. and Barber, David},
   journal={arXiv preprint arXiv:2103.16210},
   year={2021},
   bibtex_show={true},
   arxiv={2103.16210},
+}
+
+@mastersthesis{xiao2021exploiting,
+    author = {Xiao, Tim Z.},
+    institution = {University College London},
+    title = {Exploiting Semi-Supervised Generative Model in Active Learning},
+    year={2021},
+    bibtex_show={true},
+    preview={ucl_logo.png},
+    workshop={Master's Thesis at UCL},
+    pdf={AL_Thesis.pdf},
+    abstract={My master project at UCL. 
+              Active learning tries to solve a practical problem for machine learning, 
+              which is to create a good model with only limited labelling budget. 
+              In this project, we exploit useful properties from semi-supervised generative model 
+              and use them in active learning. Our experiments in the half-moon and MNIST dataset 
+              show that by using semi-supervised generative model with simple acquisition function 
+              such as predictive entropy, we are able to improve the performance of active learning. 
+              Further experiments on our proposed acquisition functions expose interesting challenges 
+              in using data density provided by the model, which can be a valuable pointer for future 
+              active learning research.}
 }
 
 @article{lyu2020you,
@@ -70,6 +95,20 @@
   preview={uncertainty-qa.png},
   html={https://sites.google.com/view/udlworkshop2020/accepted-papers},
   pdf={uncertainty_qa.pdf},
+  abstract={I am an advisor for this project. 
+            Data scarcity is a major barrier for multilingual question answering: 
+            current systems work well with languages such as English where data is affluent, 
+            but face challenges with small corpora. As data labelling is expensive, previous 
+            works have resorted to pre-tuning systems on larger multilingual corpora followed 
+            by fine-tuning on the smaller ones. Instead of curating and labelling large corpora, 
+            we demonstrate a data efficient multi-lingual question answering system which only 
+            selects uncertain questions for labelling, reducing labelling efforts and costs. 
+            To realise this Bayesian active learning framework, we develop methodology to quantify 
+            uncertainty in several state-of-art attention-based Transfer question answering models. 
+            We then propose an uncertainty measure based on the variance of BLEU scores, and computed 
+            via Monte Carlo Dropout, to detect out-of-distribution questions. We finish by showing 
+            the effectiveness of our uncertainty measures in various out-of-distribution question 
+            answering settings.}
 }
 
 @article{xiao2020wat,
@@ -85,7 +124,17 @@
   poster={uncertainty_transformer_poster.pdf},
   highlight={Spotlight talk},
   workshop={NeurIPS 2019 Workshop on Bayesian Deep Learning},
-  html={http://bayesiandeeplearning.org/2019/index.html}
+  html={http://bayesiandeeplearning.org/2019/index.html},
+  abstract={My master project at Oxford. 
+            In the project, we detect out-of-training-distribution sentences in Neural Machine Translation 
+            using the Bayesian Deep Learning equivalent of Transformer models. For this we develop a new 
+            measure of uncertainty designed specifically for long sequences of discrete random variables 
+            -- i.e. words in the output sentence. Our new measure of uncertainty solves a major intractability 
+            in the naive application of existing approaches on long sentences. We use our new measure on a 
+            Transformer model trained with dropout approximate inference. On the task of German-English 
+            translation using WMT13 and Europarl, we show that with dropout uncertainty our measure is able 
+            to identify when Dutch source sentences, sentences which use the same word types as German, 
+            are given to the model instead of German.}
 }
 
 @InProceedings{xiao2016fpga,
