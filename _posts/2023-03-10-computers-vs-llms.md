@@ -65,7 +65,7 @@ _styles: >
 Language models (LMs) are trained specifically for one out of many natural language processing (NLP) tasks. 
 By simply scaling them up to large LMs (LLMs), they emerge the ability to solve many other NLP tasks that they have not been trained for.
 This emergence of zero-shot problem solving ability of LLMs surprised the community. 
-In this blog, we draw an overlooked connection between LLMs and modern computers that also emerge zero-shot problem solving abilities.
+In this blog post, we draw an overlooked connection between LLMs and modern computers that also emerge zero-shot problem solving abilities.
 We discuss their similarities in capability, architecture, and history, and then use these similarities to motivate a different perspective on understanding LLMs and the prompting paradigm.
 We hope this connection can help us gain a deeper understanding of LLMs, and can spark discussions between the core computer science community and the foundation model community.
 
@@ -91,7 +91,7 @@ The phenomenon of a system showing spontaneous abilities that cannot be predicte
 Emergence is not a unique phenomenon that happens only in LLMs.
 It has been observed and discussed in many other subjects including physics and biology at least half a century ago.
 In the field of machine learning, emergence was also discussed and has inspired pioneer works such as the Hopfield network<d-cite key="hopfield1982neural"></d-cite>.
-The phenomenon is well explicated in an article by Philip W. Anderson<d-cite key="anderson1972more"></d-cite> with a concise title ***''More Is Different''***.
+The phenomenon is well explicated in an article by Philip W. Anderson<d-cite key="anderson1972more"></d-cite> with a concise title ***"More Is Different"***.
 
 Another example that has emergent ability are the computers we use in our daily life.
 The elementary components in modern computers are logic gates, which are designed to do simple Boolean operations only, e.g., _AND_, _OR_. 
@@ -99,7 +99,7 @@ But when we wire a large amount of them together, they emerge with the abilities
 If we phrase problems and tasks into programs, then computers can be seen as zero-shot problem solvers just like LLMs, since most of them are not designed or built for any specific program but as general purpose machines. 
 Crucially, computer scientists have developed a host of tools to help understand and further exploit emergent capabilities, such as debuggers, or various high-level programming paradigms.
 
-In this blog, we connect the dots and draw an overlooked connection between these two zero-shot problem solvers, i.e., LLMs and computers.
+In this blog post, we connect the dots and draw an overlooked connection between these two zero-shot problem solvers, i.e., LLMs and computers.
 We believe their similarities outline the potential of using LLMs for a much more general problem solving setting, and their differences help us to understand the behaviors of LLMs and how to improve them.
 In particular, we illustrate how a good language model, which allows a concept to be encoded less ambiguously, is at the core of exploiting this new model of computation. 
 We hope that this connection will spark new ideas for discussion such as computation theory, security, distributed computing etc. for LLMs.
@@ -253,7 +253,7 @@ Moreover, both humans and LLMs learn natural language from data rather than from
 </div>
 
 Many of the existing works on LLMs as zero-shot problem solvers can be understood as a spectrum of methods for minimizing the communication gap between humans and LLMs.
-At one end of the spectrum, we humans can adapt our internal language models towards the language models of LLMs (&#9312; in [Figure 2](#figure-2)), e.g., by incorporating certain signalling phrases into our prompts that empirically improve the quality of answers, such as ''Let's think step by step''<d-cite key="kojima2022large"></d-cite>.
+At one end of the spectrum, we humans can adapt our internal language models towards the language models of LLMs (&#9312; in [Figure 2](#figure-2)), e.g., by incorporating certain signalling phrases into our prompts that empirically improve the quality of answers, such as "Let's think step by step"<d-cite key="kojima2022large"></d-cite>.
 At the other end of the spectrum, we can adapt LLMs towards our internal language models (&#9313; in [Figure 2](#figure-2)).
 This can be done during training (e.g., as in InstructGPT and ChatGPT, which were trained with human feedback<d-cite key="ouyang2022training"></d-cite>), or after training (e.g., personalizing the model by few-shot prompting, i.e., prefixing prompts with examples of similar problems and their solutions or with a conversation history).
 Most prompting research falls somewhere in between these two extremes, where humans and LLMs adapt their models towards each other (&#9314; in [Figure 2](#figure-2))<d-cite key="liu2021pre"></d-cite>.
