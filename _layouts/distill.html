@@ -20,6 +20,7 @@
 
   <d-front-matter>
     <script async type="text/json">{
+      "pageUrl": "{{ page.url }}",
       "title": "{{ page.title }}",
       "description": "{{ page.description }}",
       "published": "{{ page.date | date: '%B %-d, %Y' }}",
@@ -94,6 +95,7 @@
       <d-appendix>
         <d-footnote-list></d-footnote-list>
         <d-citation-list></d-citation-list>
+        <distill-appendix></distill-appendix>
       </d-appendix>
 
       <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}"></d-bibliography>

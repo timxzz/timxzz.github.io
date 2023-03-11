@@ -80,6 +80,7 @@
   }
 
   function mergeFromYMLFrontmatter(target, source) {
+    target.pageUrl = source.pageUrl;
     target.title = source.title;
     if (source.published) {
       if (source.published instanceof Date) {
@@ -162,7 +163,9 @@
       this.katex = {};
 
       // For Tim's Blog
-      this.howpublished = undefined;
+      this.blogUrl = "http://timx.me";
+      this.howpublished = "Blog Posterior";
+      this.pageUrl = undefined;
 
       //
       // Assigned from publishing process
@@ -200,6 +203,8 @@
         return this.journal.url + '/' + this.distillPath;
       } else if (this.journal.url) {
         return this.journal.url;
+      } else if (this.blogUrl && this.pageUrl) {
+        return this.blogUrl + this.pageUrl;
       }
     }
 
@@ -1983,12 +1988,13 @@ d-appendix > distill-appendix {
   }
 
   function serializeFrontmatterToBibtex(frontMatter) {
-    return `@article{${frontMatter.slug},
+    return `@misc{${frontMatter.slug},
   author = {${frontMatter.bibtexAuthors}},
   title = {${frontMatter.title}},
-  journal = {${frontMatter.journal.title}},
+  howpublished = {${frontMatter.howpublished}},
   year = {${frontMatter.publishedYear}},
-  note = {${frontMatter.url}}
+  month = {${frontMatter.publishedMonth}},
+  note = {\\url{${frontMatter.url}}}
 }`;
   }
 
@@ -9072,7 +9078,7 @@ distill-header .nav a {
       html += `
     <h3 id="citation">Citation</h3>
     <p>For attribution in academic contexts, please cite this work as</p>
-    <pre class="citation short">${frontMatter.concatenatedAuthors}, "${frontMatter.title}", Tim Xiao's Blog - Posterior, ${frontMatter.publishedYear}.</pre>
+    <pre class="citation short">${frontMatter.concatenatedAuthors}, "${frontMatter.title}", Blog Posterior, ${frontMatter.publishedYear}.</pre>
     <p>BibTeX citation</p>
     <pre class="citation long">${serializeFrontmatterToBibtex(frontMatter)}</pre>
     `;
