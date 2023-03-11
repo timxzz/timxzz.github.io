@@ -99,7 +99,7 @@ d-article {
 d-appendix {
   border-top-color: var(--global-divider-color) !important;
   color: var(--global-distill-app-color) !important;
-  h3, li, span {
+  h3, li, span, p, em {
     color: var(--global-distill-app-color) !important;
   }
   a, a.footnote-backlink {
