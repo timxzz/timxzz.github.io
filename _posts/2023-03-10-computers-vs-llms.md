@@ -143,7 +143,7 @@ With increasing scale of these language models, they turn out to emerge the abil
   <div class="row mt-0">
       <div class="col-sm mt-0 mt-md-0"></div>
       <div class="col-sm-7 mt-0 mt-md-0">
-          {% include figure.html path="assets/img/posts_2023-03-10-computers-vs-llms/connects.png" name="models" class="img-fluid rounded z-depth-0" zoomable=true %}
+          {% include figure.html path="assets/img/posts_2023-03-10-computers-vs-llms/connects.svg" name="models" class="img-fluid rounded z-depth-0" %}
       </div>
       <div class="col-sm mt-0 mt-md-0"></div>
   </div>
