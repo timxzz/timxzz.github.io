@@ -83,6 +83,7 @@
   }
 
   function mergeFromYMLFrontmatter(target, source) {
+    target.pageUrl = source.pageUrl;
     target.title = source.title;
     if (source.published) {
       if (source.published instanceof Date) {
@@ -164,6 +165,11 @@
 
       this.katex = {};
 
+      // For Tim's Blog
+      this.blogUrl = "http://timx.me";
+      this.howpublished = "Blog Posterior";
+      this.pageUrl = undefined;
+
       //
       // Assigned from publishing process
       //
@@ -200,6 +206,8 @@
         return this.journal.url + '/' + this.distillPath;
       } else if (this.journal.url) {
         return this.journal.url;
+      } else if (this.blogUrl && this.pageUrl) {
+        return this.blogUrl + this.pageUrl;
       }
     }
 
@@ -753,15 +761,26 @@
   }
 
   function serializeFrontmatterToBibtex(frontMatter) {
-    return `@article{${frontMatter.slug},
+    return `@misc{${frontMatter.slug},
   author = {${frontMatter.bibtexAuthors}},
   title = {${frontMatter.title}},
-  journal = {${frontMatter.journal.title}},
+  howpublished = {${frontMatter.howpublished}},
   year = {${frontMatter.publishedYear}},
-  note = {${frontMatter.url}},
-  doi = {${frontMatter.doi}}
+  month = {${frontMatter.publishedMonth}},
+  note = {\\url{${frontMatter.url}}}
 }`;
   }
+
+//   function serializeFrontmatterToBibtex(frontMatter) {
+//     return `@article{${frontMatter.slug},
+//   author = {${frontMatter.bibtexAuthors}},
+//   title = {${frontMatter.title}},
+//   journal = {${frontMatter.journal.title}},
+//   year = {${frontMatter.publishedYear}},
+//   note = {${frontMatter.url}},
+//   doi = {${frontMatter.doi}}
+// }`;
+//   }
 
   // Copyright 2018 The Distill Template Authors
 
@@ -12971,7 +12990,7 @@ distill-header .nav a {
       html += `
     <h3 id="citation">Citation</h3>
     <p>For attribution in academic contexts, please cite this work as</p>
-    <pre class="citation short">${frontMatter.concatenatedAuthors}, "${frontMatter.title}", Distill, ${frontMatter.publishedYear}.</pre>
+    <pre class="citation short">${frontMatter.concatenatedAuthors}, "${frontMatter.title}", Blog Posterior, ${frontMatter.publishedYear}.</pre>
     <p>BibTeX citation</p>
     <pre class="citation long">${serializeFrontmatterToBibtex(frontMatter)}</pre>
     `;
