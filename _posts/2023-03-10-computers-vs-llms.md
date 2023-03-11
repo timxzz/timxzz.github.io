@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: Large Language Models Are Zero-Shot Problem Solvers <br> &mdash; Just Like Modern Computers
+title: Large Language Models Are Zero-Shot Problem Solvers &mdash; Just Like Modern Computers
 description: Are large language models going to redefine the next generation of computers?
 giscus_comments: true
 date: 2023-03-10
