@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Large Language Models Are Zero-Shot Problem Solvers &mdash; Just Like Modern Computers
-description: Are large language models going to redefine the next generation of computers?
+description: Are large language models defining a new kind of universal computing machines?
 giscus_comments: true
 date: 2023-03-10
 
@@ -130,11 +130,9 @@ This allowed computers to read and solve arbitrary programs for which they were 
 Written language can be formed by sequences of tokens. A language model learns mappings to the next token $$t_i$$ from its prefix. 
 Such a mapping can be represented as a conditional probability distribution (see [Figure 1(b)](#figure-1)). 
 The joint probability of the sequence $$p(\boldsymbol{t})$$ is the product of the conditional probabilities<d-cite key="bengio2000neural"></d-cite>, i.e., 
-
-$$
+\begin{equation}
 p(\boldsymbol{t}) = p(t_1)\prod_{i=2}^{N} p(t_i | t_1, \dots, t_{i-1}).
-$$
-
+\end{equation}
 A popular method to model these conditional probabilities is to use Transformers<d-cite key="vaswani2017attention"></d-cite> and train under self-supervision.
 With increasing scale of these language models, they turn out to emerge the ability to solve tasks other than language modeling (i.e.,  they are zero-shot problem solvers), and we call them large language models for distinction.
 

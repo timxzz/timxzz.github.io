@@ -167,7 +167,7 @@
 
       // For Tim's Blog
       this.blogUrl = "http://timx.me";
-      this.howpublished = "Blog Posterior";
+      this.howpublished = "Tim Xiao's Blog - Posterior";
       this.pageUrl = undefined;
 
       //
@@ -12990,7 +12990,7 @@ distill-header .nav a {
       html += `
     <h3 id="citation">Citation</h3>
     <p>For attribution in academic contexts, please cite this work as</p>
-    <pre class="citation short">${frontMatter.concatenatedAuthors}, "${frontMatter.title}", Blog Posterior, ${frontMatter.publishedYear}.</pre>
+    <pre class="citation short">${frontMatter.concatenatedAuthors}, "${frontMatter.title}", Tim Xiao's Blog - Posterior, ${frontMatter.publishedYear}.</pre>
     <p>BibTeX citation</p>
     <pre class="citation long">${serializeFrontmatterToBibtex(frontMatter)}</pre>
     `;
@@ -13201,4 +13201,3 @@ distill-header .nav a {
   Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-//# sourceMappingURL=transforms.v2.js.map
