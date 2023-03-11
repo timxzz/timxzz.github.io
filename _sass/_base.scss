@@ -422,6 +422,33 @@ footer.sticky-bottom {
   }
 }
 
+.blog-img-banner {
+  grid-column: screen;
+  background: #f8f8fb;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.blog-img-body {
+  background: $white-color;
+  padding: 20px;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.blog-fig-caption {
+  margin-top: -20px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.5em;
+}
+
 
 // Projects
 
