@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Large Language Models Are Zero-Shot Problem Solvers &mdash; Just Like Modern Computers
-description: Are large language models defining a new kind of universal computing machines?
+description: Are large language models outlining a new kind of universal computing machines?
 giscus_comments: true
 date: 2023-03-10
 
