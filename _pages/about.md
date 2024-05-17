@@ -19,7 +19,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 Hello! I am Tim, also known as Zhenzhong Xiao (肖镇中 in Chinese). 
-Currently I am doing my PhD in machine learning at the [University of Tübingen](https://uni-tuebingen.de/en/research/core-research/cluster-of-excellence-machine-learning/home/) with [Robert Bamler](https://robamler.github.io).
+Currently I am doing my PhD in machine learning at the [University of Tübingen](https://uni-tuebingen.de/en/research/core-research/cluster-of-excellence-machine-learning/home/) with [Robert Bamler](https://robamler.github.io), and as a visiting PhD student at [MPI-IS Tübingen](https://is.mpg.de) with [Weiyang Liu](https://wyliu.com) and [Bernhard Schölkopf](https://is.mpg.de/~bs).
 
 Previously, I did a MRes Computational Statistics and Machine Learning at [UCL](http://www.gatsby.ucl.ac.uk/teaching/courses/) with [David Barber](https://davidbarber.github.io/about/) and a MSc in Computer Science at the [University of Oxford](https://oatml.cs.ox.ac.uk) with [Yarin Gal](https://www.cs.ox.ac.uk/people/yarin.gal/website/).
 Prior to that I studied computer science at the University of Manchester for my undergraduate. At the time, I also had an one year industrial placement with Morgan Stanley, during which I worked with a global team to create tools for managing and monitoring the cloud platform that has a huge number of servers located around the world.
