@@ -1,3 +1,7 @@
+"Bamler":
+  - firstname: ["Robert"]
+    url: https://robamler.github.io
+
 "Gomez":
   - firstname: ["Aidan N.", "Aidan"]
     url: https://aidangomez.ca
@@ -21,9 +25,8 @@
   - firstname: ["Weiyang"]
     url: https://wyliu.com
 
-"Bamler":
-  - firstname: ["Robert"]
-    url: https://robamler.github.io
+  - firstname: ["Zhen"]
+    url: https://itszhen.com/
 
 "Zenn":
   - firstname: ["Johannes"]
