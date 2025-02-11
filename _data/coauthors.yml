@@ -1,37 +1,37 @@
-"Bamler":
-  - firstname: ["Robert"]
-    url: https://robamler.github.io
+# "Bamler":
+#   - firstname: ["Robert"]
+#     url: https://robamler.github.io
 
-"Gomez":
-  - firstname: ["Aidan N.", "Aidan"]
-    url: https://aidangomez.ca
+# "Gomez":
+#   - firstname: ["Aidan N.", "Aidan"]
+#     url: https://aidangomez.ca
 
-"Gal":
-  - firstname: ["Yarin"]
-    url: https://www.cs.ox.ac.uk/people/yarin.gal/website/
+# "Gal":
+#   - firstname: ["Yarin"]
+#     url: https://www.cs.ox.ac.uk/people/yarin.gal/website/
 
-"Barber":
-  - firstname: ["David"]
-    url: https://davidbarber.github.io/about/
+# "Barber":
+#   - firstname: ["David"]
+#     url: https://davidbarber.github.io/about/
 
-"Zhang":
-  - firstname: ["Mingtian"]
-    url: https://mingtian.ai
+# "Zhang":
+#   - firstname: ["Mingtian"]
+#     url: https://mingtian.ai
     
-  - firstname: ["Andi"]
-    url: http://andi.ac
+#   - firstname: ["Andi"]
+#     url: http://andi.ac
 
-"Liu":
-  - firstname: ["Weiyang"]
-    url: https://wyliu.com
+# "Liu":
+#   - firstname: ["Weiyang"]
+#     url: https://wyliu.com
 
-  - firstname: ["Zhen"]
-    url: https://itszhen.com/
+#   - firstname: ["Zhen"]
+#     url: https://itszhen.com/
 
-"Zenn":
-  - firstname: ["Johannes"]
-    url: https://jzenn.github.io
+# "Zenn":
+#   - firstname: ["Johannes"]
+#     url: https://jzenn.github.io
 
-"Schölkopf":
-  - firstname: ["Bernhard"]
-    url: https://is.mpg.de/~bs
+# "Schölkopf":
+#   - firstname: ["Bernhard"]
+#     url: https://is.mpg.de/~bs
