@@ -21,12 +21,14 @@ social: true  # includes social icons at the bottom of the page
 Hello! I am Tim, also known as Zhenzhong Xiao (肖镇中 in Chinese). 
 Currently, I am doing my PhD in machine learning at the [University of Tübingen](https://uni-tuebingen.de/en/research/core-research/cluster-of-excellence-machine-learning/home/) with [Robert Bamler](https://robamler.github.io), and as a visiting PhD student at [MPI-IS Tübingen](https://is.mpg.de) with [Weiyang Liu](https://wyliu.com) and [Bernhard Schölkopf](https://is.mpg.de/~bs).
 
+I am also an organiser of [FridayTalks@Tübingen](https://fridaytalks.github.io/), a bi-weekly AI research seminar aiming to provide a place for the Tübingen AI research community to exchange ideas.
+
 Previously, I did a MRes Computational Statistics and Machine Learning at [UCL](http://www.gatsby.ucl.ac.uk/teaching/courses/) with [David Barber](https://davidbarber.github.io/about/) and a MSc in Computer Science at the [University of Oxford](https://oatml.cs.ox.ac.uk) with [Yarin Gal](https://www.cs.ox.ac.uk/people/yarin.gal/website/).
 Prior to that I studied computer science at the University of Manchester for my undergraduate. At the time, I also had a one year industrial placement with Morgan Stanley, during which I worked with a global team to create tools for managing and monitoring the cloud platform with a huge number of servers located around the world.
 
 Just like many computer scientists, I have faith in computing. Although computation will not solve all problems for you, I believe it will certainly take you closer to the answers.
 
-At the moment, I am very interested in Machine Learning, a field that has amazing impacts on human life.
+<!-- At the moment, I am very interested in Machine Learning, a field that has amazing impacts on human life. -->
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

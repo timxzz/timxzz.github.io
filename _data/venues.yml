@@ -6,6 +6,10 @@
   url: https://iclr.cc
   color: '#85c54b'
 
+"TMLR":
+  url: https://jmlr.org/tmlr/index.html
+  color: '#152463'
+
 "arXiv":
   color: '#b31b1b'
 
